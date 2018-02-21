@@ -1,0 +1,28 @@
+$first_black: #212121;
+$second_black: #616161;
+$first_blue: #006064;
+$second_blue: #B2EBF2;
+$first_red: #DD2C00;
+$second_red: #FF9E80;
+$first_brown: #3E2723;
+$second_brown: #D7CCC8;
+$first_green: #00C853;
+$second_green: #B9F6CA;
+$text_color: #FFF3E0;
+$my_pink: #ecd9db;
+
+@mixin margin($width, $height)
+{
+	margin: $width $height;
+}
+
+@mixin padding($width, $height)
+{
+	padding: $width $height;
+}
+
+.interface{
+	background-color: #FFF3E0;
+	@include padding(10,10);
+	@include margin(10,10);
+}

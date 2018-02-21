@@ -1,0 +1,89 @@
+#three {
+	width: 30%;
+	height: 100%;
+	margin: 10px;
+	padding: 10px;
+	border: 3px black solid;
+	display: inline-block;
+	background: #A9A9A9;
+}
+
+#one {
+	width: 100%;
+	margin: 10px;
+	padding: 10px;
+	border: 3px black solid;
+	display: block;
+	background: #778899;
+}
+.one{
+	background: #2F4F4F;
+	font-size: 14pt;
+	color: #DCDCDC;
+}
+
+html,
+body,
+ul, li,
+ol, img,
+div {
+  margin:  0;
+  padding: 0;
+}
+#header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 95%;
+	margin: auto;
+	background: #616161;
+}
+#logo{
+	width: 200px;
+	padding: 10px;
+}
+#logo img {
+	width: 200px;
+	height: 50px;
+}
+#user{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+#user p{
+	margin: 5px;
+	color: #fCDfDC;	
+	text-align: center;
+	padding: 10px;
+}
+#user img {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+}
+#body{
+	width: 95%;
+	margin: auto;
+}
+#col_left{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	background-color: #616161;
+	color: #fCDfDC;	
+	width: 200px;
+}
+#col_left ul{
+	list-style-type: none;
+}
+#col_left ul li ul li{
+	width: 180px;
+	padding: 10px
+}
+#col_left ul li ul li:hover{
+	background: #fCDfDC;
+	color: #616161;
+}

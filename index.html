@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Моя третья домашняя работа по Frontend Edvanced</title>
+</head>
+<body>
+<div id="header">
+	<div id="logo">
+		<img src="./static(assets)/img/logo.png">
+	</div>
+	<div id="vuebox">
+		<div>
+			<input type="text" name="click" id="clickerInput">
+			<button  id="clickerButton" >Начать?</button>
+		</div>
+		<div id="app">		
+			<input type="text" v-model="data">
+			<p>{{data}}</p>
+		</div>	
+		<div id="app-1">
+		  <input v-model="message"></<input>
+		  <button v-on:click="Message">Press</button>
+		</div>
+		<div id="#app-2">
+			<input type="checkbox" name="to-do list" v-for="do in list" v-bind:class="{'strike': do.status}">{{do.name}}<br>
+		</div>
+	</div>
+</div>
+<div id="wrap">
+	<div id="col_left">
+		<div id="user">
+			<img src="./static(assets)/img/photo_user.jpg">
+				<div class="userdate">
+					<p class="userName">Klymas Olha</p>
+					<p class="userPost">Admin</p>
+				</div>
+		</div>
+		<div class="nav">
+			<ul>
+				<li>Dashboard</li>
+				<li>Frontend</li>
+				<li>Animated Elements</li>
+				<li>Pages</li>
+				<li>Support Center</li>
+				<li>Tabs & Accordions</li>
+				<li>UI Elements</li>
+				<li>Icons</li>
+				<li>Progress Bars</li>
+				<li>Forms</li>
+				<li>Settings</li>
+				<li>Pricing Tables</li>
+			</ul>
+		</div>
+	</div>
+	<div id="content"></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,152 @@
+@import '_reset';
+@import '_var';
+
+body{
+	background: #ffcccf;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+#header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 95%;
+	margin: auto;
+	background: #f5ebec;
+	border-bottom: 2px &my_pink solid;
+}
+
+#vuebox{
+	display: flex;
+	flex-direction: row;
+	width: 800px;
+	justify-content: space-around;
+}
+
+#logo{
+	img {
+		width: 200px;
+		background: #2c3144;
+	};
+}
+
+.userdate{
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	color: #681741;
+}
+
+#user{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	background: #fe7087;
+	width: 180px;
+	padding: 10px;
+	border-bottom: 2px &my_pink solid;
+	p {
+		padding: 5px;
+		margin: 0px;	
+		color: &my_pink;
+		&hover{
+			text-decoration: underline;
+		};
+	img {
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+		};
+	}
+}
+
+.userPost{
+	font-weight: normal;
+}
+
+#wrap {
+	width: 95%;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+}
+#col_left{
+	background: #2c3144;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	color: #667a88;	
+	width: 200px;
+	ul {
+		list-style-type: none;
+		li {
+			width: 180px;
+			padding: 15px 10px;
+			&hover{
+				background: #272b3b;
+				color: #eff0f1;
+			};
+		};
+	};
+}
+
+#content{
+	background-color: #f5ebec;
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#one {
+	width: 97%;
+	padding: 0px 10px;
+} 
+
+#three {
+	width: 30%;
+	padding: 0px 10px;
+}
+
+.success{
+	@extend .interface;
+	color: &text_color;
+	background: $first_green;
+	&:hover{
+		background: $second_green;
+	};
+}
+
+.info{
+	@extend .interface;
+	color: &text_color;
+	background: $first_blue;
+	&:hover{
+		background: $second_blue;
+	};
+}
+
+.error{
+	@extend .interface;
+	color: &text_color;
+	background: $first_red;
+	&:hover{
+		background: $second_red;
+	};
+}
+
+.warning{
+	@extend .interface;
+	color: &text_color;
+	background:$first_brown;
+	&:hover{
+		background: $second_brown;
+	};
+}
+.strike{
+	text-decoration: line-through;
+	color: #aaa;	
+}
