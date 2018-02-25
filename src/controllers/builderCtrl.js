@@ -75,12 +75,13 @@ work: function(){
     return this.model.init().then(()=>{
       let data = this.model.data;
       this.markUp = data;
-      if("div"){
+
       let div = document.getElementsByTagName('div');
       let classes = ['success', 'info', 'error', 'warning'];
       let classDiv = Math.floor(Math.random() + classes.length);
-      div.classList.add(classes[classDiv]);
-    }
+      for (var i = div.length - 1; i >= 0; i--) {
+      // div[i].classList.add(classes[classDiv]);
+      }
     });
   },
 

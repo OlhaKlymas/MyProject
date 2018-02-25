@@ -146,6 +146,29 @@ body{
 		background: $second_brown;
 	};
 }
+#three {
+	width: 30%;
+	height: 100%;
+	margin: 10px;
+	padding: 10px;
+	border: 3px black solid;
+	display: inline-block;
+	background: #A9A9A9;
+}
+
+#one {
+	width: 100%;
+	margin: 10px;
+	padding: 10px;
+	border: 3px black solid;
+	display: block;
+	background: #778899;
+}
+.one{
+	background: #2F4F4F;
+	font-size: 14pt;
+	color: #DCDCDC;
+}
 .strike{
 	text-decoration: line-through;
 	color: #aaa;	

@@ -1,6 +1,8 @@
 const path = require("path");
 const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+// var VueResource = require("vue-resource");
+// Vue.use(VueResource);
 module.exports={
 	entry:{
 		main:path.resolve(__dirname,"src", "index.js"),
@@ -10,6 +12,7 @@ module.exports={
 		filename:"[name].js",
 		path: path.resolve(__dirname,"build"),
 	},
+	devtool: "eval",
 	devServer:{
 		contentBase: path.resolve(__dirname,"dist"),
 		compress:true,
@@ -29,7 +32,7 @@ module.exports={
 				test: /\.css$/, 
 				use:[
 					{
-						loader: "scc-loader",
+						loader: "css-loader",
 					}
 				]
 			},
@@ -39,6 +42,12 @@ module.exports={
 					{loader: "style-loader"},
 					{loader: "css-loader"},
 					{loader: "sass-loader"}
+				]
+			},
+			{
+				test: /\.vue$/, 
+				use:[
+					{loader: "vue-loader"}
 				]
 			}
 		]
