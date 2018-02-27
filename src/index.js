@@ -1,12 +1,13 @@
 
-import "./posts.js";
+// import "./posts.js";
 import "./styles/styles.scss";
 import Vue from "vue/dist/vue.min.js";
 // import ctrl from "./controllers/clickerCtrl.js";
 import todo from "./components/todo.vue";
 import clicker from "./components/clicker.vue";
 import pugTest from "./components/pugTest.vue";
-import content from "./components/content.vue";
+import contentV from "./components/content.vue";
+import card from "./components/card.vue";
 
 // new Vue ({
 // 		el:"#app-0",
@@ -54,12 +55,13 @@ import content from "./components/content.vue";
 
 new Vue ({
   el:"#app",
-  template:'<div> <todo/><clicker/><pugTest/><content/></div>',
+  template:'<div> <todo/><clicker/><pugTest/><card/><contentV/></div>',
   components:{
     todo : todo,
     clicker : clicker,
     pugTest : pugTest,
-    content : content
+    card : card,
+    contentV : contentV
   }
 })
 

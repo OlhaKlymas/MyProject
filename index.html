@@ -2,31 +2,33 @@
 <html>
 <head>
 	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 	<title>Моя домашняя работа по Frontend Edvanced</title>
 </head>
 <body>
 <div id="header">
+	<div id="menu">
+            <button @click="show = !show">
+                <i class="ion-navicon"></i>
+            </button>
+        
+        <aside v-show="show" transition="slide"></aside>
+  	</div>
 	<div id="logo">
-		<img src="./static(assets)/img/logo.png">
+		<img src="static/img/logo.png">
 	</div>
-	
-	<div id="app">
-		<todo></todo>
-		<!-- <div>
-			<input type="text" name="click" id="clickerInput">
-			<button  id="clickerButton" >Начать?</button>
-		</div>
-		<div id="app-0">		
-			<input type="text" v-model="data">
-			<p>{{data}}</p>
-		</div> -->	
-		
-	</div>
+	<form>
+	    <div class="search">
+	     <input type="search" placeholder="search">
+	     <input type="submit" value="Найти">
+	   	</div>
+  	</form>
+  	
 </div>
 <div id="wrap">
 	<div id="col_left">
 		<div id="user">
-			<img src="./static(assets)/img/photo_user.jpg">
+			<img src="static/img/photo_user.jpg">
 				<div class="userdate">
 					<p class="userName">Klymas Olha</p>
 					<p class="userPost">Admin</p>
@@ -50,8 +52,18 @@
 		</div>
 	</div>
 	<div id="content">
-		
+		<div id="app">
+	</div>
 	</div>
 </div>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js"></script>
+    <script>
+        new Vue({
+            el: "#menu",
+            data: {
+                show: false
+            }
+        })
+    </script>
 </body>
 </html>

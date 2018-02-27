@@ -1,6 +1,7 @@
 const path = require("path");
 const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 // var VueResource = require("vue-resource");
 // Vue.use(VueResource);
 module.exports={
@@ -14,7 +15,7 @@ module.exports={
 	},
 	devtool: "eval",
 	devServer:{
-		contentBase: path.resolve(__dirname,"dist"),
+		contentBase: path.resolve(__dirname,"build"),
 		compress:true,
 		disableHostCheck:true,
 		port:8080,
@@ -23,8 +24,10 @@ module.exports={
 	},
 	plugins: [
 		new webpack.HotModuleReplacementPlugin(),
-		new HtmlWebpackPlugin({template: "./index.html"})
-	],
+		new HtmlWebpackPlugin({template: "./index.html"}),
+		new CopyWebpackPlugin([{ from: 'static/img/*.*'}]),
+		new CopyWebpackPlugin([{ from: 'static/fonts/*.*'}])
+		],
 	// watch: true,
 	module:{
 		rules:[
@@ -49,7 +52,29 @@ module.exports={
 				use:[
 					{loader: "vue-loader"}
 				]
-			}
+			},
+			{
+				test: /\.pug$/, 
+				use:[
+					{loader: 'pug-loader'}     
+				]
+			},
+			{
+		        test: /\.(woff|woff2|eot|ttf|otf)$/,
+				loader: "file-loader"
+	      	},
+	      	{
+                test: /\.(png|jpg|gif|svg)$/,
+                use: [
+                    {
+                        loader: "url-loader",
+                        options: {
+                            limit: 8000, // Convert images < 8kb to base64 strings
+                            //  name: 'images/[hash]-[name].[ext]'
+                        }
+                    }
+                ]
+            }
 		]
 	}
 }

@@ -1,9 +1,10 @@
-<template>
-	<div class="posts" v-for="post in posts">
-		<span>{{post.id}}</span>
-		<h3>{{post.title}}</h3>
-		<p>{{post.body}}</p>
-	</div>
+<template lang="pug">
+	div
+		p lol
+		div.posts(v-for="post in posts")
+			span {{post.id}}
+			h3 {{post.title}}
+			p {{post.body}}
 </template>
 <script>
 	export default{
@@ -14,35 +15,16 @@
 		    }
 		},
 		methods:{
-			getAllPosts: function(){
-				this.$http.get(this.endpoint).then(function(response){
-					this.posts = response.data
-				}, function(error){
-				})
+			init: function(url = 'https://jsonplaceholder.typicode.com/posts'){
+			  return fetch(url)
+			  .then(response => response.json())
+			  .then(json => this.posts = json)
 			}
 		},
 		created: function(){
-			this.getAllPosts()
+			this.init();
+			console.log("lol")
 		}
 	}
 </script>
-<style></style>
 
-
-
-new Vue({
-	el:"#appa",
-	data:{
-		endpoint:"https://jsonplaceholder.typicode.com/posts",
-		posts: []
-	},
-	methods:{
-		getAllPosts: function(){
-			this.$http.get(this.endpoint).then(function(response){
-				this.posts = response.data
-			},
-			function(error)
-			)
-		}
-	}
-})

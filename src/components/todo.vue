@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<div v-for="d in list" v-bind:class="{'strike': d.status}">
-			<input type="checkbox" name="">
+			<input type="checkbox">
 		{{d.name}}
 		</div>
 	</div>
@@ -14,30 +14,40 @@
 		    list: [
 		        {
 		          name: "Дело №1",
-		          status: true
+		          status: false
 		        },
 		        {
 		          name: "Дело №2",
-		          status: true
+		          status: false
 		        },
 		        {
 		          name: "Дело №3",
-		          status: true
+		          status: false
 		        },
 		        {
 		          name: "Дело №4",
-		          status: true
+		          status: false
 		        }
-		    ]}
+		    ]
+			}
 		  },
 		  methods: {
-		  	
+		  	// toDo: function(){
+		  	// 	let t = body.getElementsByName('input')
+		  	// 	if(input:checked){
+		  	// 		d.status = true
+		  	// 	}
+		  	// 	else{
+		  	// 		d.status = false
+		  	// 	}
+		  	// }
 		  }
 	}
 </script>
 
-<style >
-	.toDoList{
-		color: red;
+<style>
+	.strike:checked{
+	text-decoration: line-through;
+	color: #aaa;
 	}
 </style>
