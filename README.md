@@ -18,16 +18,16 @@ MyProject - это проект, над которым проводилась р
 При его создании были использованы следующие технологии:
   
 
-|`Название`  |`Версия`    |  
-|----------- |---------:  |  
-|**Webpack** |*3.11.0*    |  
-|**Vue**     |*2.5.13*    |  
-|**SASS**    |*6.0.6*     |  
-|**Pug**     |*2.0.0-rc.4*|  
+|   `Название`    |   `Версия`    |  
+|---------------- |--------------:|  
+|   **Webpack**   |   *3.11.0*    |  
+|     **Vue**     |   *2.5.13*    |  
+|     **SASS**    |   *6.0.6*     |  
+|     **Pug**     |   *2.0.0-rc.4*|  
 
 <!-- Архитектура -->
 ### Архитектура  
 
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=3fbUDHmNKo8" target="_blank"><img src="http://img.youtube.com/vi/3fbUDHmNKo8/0.jpg" 
-alt="ALT-ТЕКСТ ИЗОБРАЖЕНИЯ" width="240" height="180" border="10" /></a>
+alt="ALT-ТЕКСТ ИЗОБРАЖЕНИЯ" align="center" width="600" height="450" border="10" /></a>
