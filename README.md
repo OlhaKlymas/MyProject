@@ -31,13 +31,9 @@ MyProject - это проект, над которым проводилась р
 <canvas id="c1" width="400" height="200">
 
 </canvas>
-<style type="text/css">
-	#c1{
-		width: 400px;
-		height: 200px;
-		border: 3 px solid black;
-	}
-</style>
+<script type="text/javascript">
+	let a = document.getElementById("c1")
+</script>
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=3fbUDHmNKo8" target="_blank"><img src="https://yt3.ggpht.com/-vJmCPev2ScI/AAAAAAAAAAI/AAAAAAAAAAA/XNoNfL1tGxs/s288-mo-c-c0xffffffff-rj-k-no/photo.jpg" 
 alt="Курсы программирования, тестирования, веб-дизайна от ITEA (IT Education Academy)" width="450" height="337" border="10" /></a>
