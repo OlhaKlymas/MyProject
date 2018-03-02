@@ -13,14 +13,39 @@ module.exports={
 		filename:"[name].js",
 		path: path.resolve(__dirname,"build"),
 	},
+	resolve:{
+		extensions:[".js", ".json", ".vue", ".scss", ".ttf"],
+		alias:{
+			vue:"vue/dist/vue.min",
+			fonts:path.join(__dirname, "static", "fonts")
+		}
+	},
 	devtool: "eval",
+
 	devServer:{
 		contentBase: path.resolve(__dirname,"build"),
 		compress:true,
 		disableHostCheck:true,
 		port:8080,
 		open:true,
-		hot:true
+		hot:true,
+		stats:{
+			children: false,
+	        chunks: false,
+	        colors: true,
+	        depth: false,
+	        entrypoints: false,
+	        errors: true,
+	        errorDetails: true,
+	        hash: true,
+	        modules: false,
+	        maxModules: 15,
+	        modulesSort: "field",
+	        performance: true,
+	        timings: true,
+	        version: true,
+	        warnings: true,
+		},
 	},
 	plugins: [
 		new webpack.HotModuleReplacementPlugin(),

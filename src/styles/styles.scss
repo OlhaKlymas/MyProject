@@ -6,7 +6,7 @@
 	font-family: 'Roboto';
 	font-style: normal;
 	font-weight: 100;
-	src: url('~/static/fonts/Roboto-Bold.ttf');
+	src: url('/fonts/Roboto-Bold.ttf');
 }
 body{
 	background: #ffcccf;
@@ -38,10 +38,10 @@ body{
 }
 
 #logo{
+	height:60px;
 	img {
-		width: 200px;
+		width: 360px;
 		height: 60px;
-		background: #2c3144;
 	};
 }
 
@@ -115,16 +115,6 @@ body{
     justify-content: space-around;
 }
 
-#one {
-	width: 97%;
-	padding: 0px 10px;
-} 
-
-#three {
-	width: 30%;
-	padding: 0px 10px;
-}
-
 .success{
 	@extend .interface;
 	color: &text_color;
@@ -160,36 +150,32 @@ body{
 		background: $second_brown;
 	};
 }
-#three {
+.posts {
 	width: 30%;
 	height: 100%;
-	margin: 10px;
-	padding: 10px;
-	border: 3px black solid;
-	display: inline-block;
-	background: #A9A9A9;
+	margin: 5px;
+	padding: 5px;
+	border: 1px black solid;
+	display: inline-flex;
+	background: linear-gradient(to bottom, #fff5fd 0%, #ffcccf 36%, #2b2d38 100%);
+	flex-wrap: wrap;
+		&:hover{
+			background: linear-gradient(to bottom, #fff5fd 0%, #ffcccf 36%, #b7688c 100%);
+		};
 }
-
-#one {
-	width: 100%;
-	margin: 10px;
-	padding: 10px;
-	border: 3px black solid;
-	display: block;
-	background: #778899;
+.routers{
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 1000px;
 }
-.one{
-	background: #2F4F4F;
-	font-size: 14pt;
-	color: #DCDCDC;
-}
-
 aside {
     background-color: #fff;
     width: 250px;
     position: fixed;
-    top: 55px;
-    left: 0;
+    top: 60px;
+    right: 2.5%;
     bottom: 0px;
     z-index: 1;
     display: flex;
@@ -215,10 +201,10 @@ button {
 .slide-transition {
     transition: all .3s cubic-bezier(.65, .05, .36, 1);
 }
-
-/*.slide-enter {
-    left: -100%;
+/*
+.slide-enter {
+    right: -100%;
 }﻿
 .slide-leave{
-    left: -100%;
+    right: -100%;
 }﻿*/

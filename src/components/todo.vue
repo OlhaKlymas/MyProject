@@ -1,8 +1,8 @@
 <template>
 	<div>
 		<div v-for="d in list" v-bind:class="{'strike': d.status}">
-			<input type="checkbox">
-		{{d.name}}
+			<input type="checkbox" class="n">
+			{{d.name}}
 		</div>
 	</div>
 </template>
@@ -32,21 +32,27 @@
 			}
 		  },
 		  methods: {
-		  	// toDo: function(){
-		  	// 	let t = body.getElementsByName('input')
-		  	// 	if(input:checked){
-		  	// 		d.status = true
-		  	// 	}
-		  	// 	else{
-		  	// 		d.status = false
-		  	// 	}
-		  	// }
-		  }
+		  	completeItem: function (){
+		  		let myList = document.getElementsByClassName("n");
+		  		console.log(myList.length);
+		  		for (var i = 0; myList.length > i; i++) {
+		  			if(!myList[i].checked){
+						this.status = true;
+		  			}
+		  			else{
+						this.status = false;
+		  			}
+		  		}
+		  	}
+		  },
+		  created: function(){
+			this.completeItem()
+		}
 	}
 </script>
 
 <style>
-	.strike:checked{
+	.strike{
 	text-decoration: line-through;
 	color: #aaa;
 	}

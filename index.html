@@ -3,26 +3,21 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-	<title>Моя домашняя работа по Frontend Edvanced</title>
+	<title>Мой проект Frontend Edvanced</title>
 </head>
 <body>
 <div id="header">
-	<div id="menu">
-            <button @click="show = !show">
-                <i class="ion-navicon"></i>
-            </button>
-        
-        <aside v-show="show" transition="slide"></aside>
-  	</div>
-	<div id="logo">
-		<img src="static/img/logo.png">
-	</div>
 	<form>
 	    <div class="search">
 	     <input type="search" placeholder="search">
 	     <input type="submit" value="Найти">
 	   	</div>
   	</form>
+	
+	<div id="logo">
+		<img src="static/img/logo.png">
+	</div>
+	
   	
 </div>
 <div id="wrap">
@@ -52,18 +47,9 @@
 		</div>
 	</div>
 	<div id="content">
-		<div id="app">
-	</div>
+		<div id="application"></div>
 	</div>
 </div>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js"></script>
-    <script>
-        new Vue({
-            el: "#menu",
-            data: {
-                show: false
-            }
-        })
-    </script>
+
 </body>
 </html>
