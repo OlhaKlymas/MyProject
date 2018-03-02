@@ -29,5 +29,5 @@ MyProject - это проект, над которым проводилась р
 ### Архитектура  
 
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=3fbUDHmNKo8" target="_blank"><img src="http://img.youtube.com/vi/3fbUDHmNKo8/0.jpg" 
+<a href="http://www.youtube.com/3fbUDHmNKo8" target="_blank"><img src="http://img.youtube.com/vi/3fbUDHmNKo8/0.jpg" 
 alt="ALT-ТЕКСТ ИЗОБРАЖЕНИЯ" align="center" width="600" height="450" border="10" /></a>
