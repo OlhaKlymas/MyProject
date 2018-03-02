@@ -29,5 +29,5 @@ MyProject - это проект, над которым проводилась р
 ### Архитектура  
 
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=3fbUDHmNKo8" target="_blank"><img src="http://img.youtube.com/vi/3fbUDHmNKo8/0.jpg" 
-alt="ALT-ТЕКСТ ИЗОБРАЖЕНИЯ" align="center" width="600" height="450" border="10" /></a>
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=3fbUDHmNKo8" target="_blank"><img src="https://yt3.ggpht.com/-vJmCPev2ScI/AAAAAAAAAAI/AAAAAAAAAAA/XNoNfL1tGxs/s288-mo-c-c0xffffffff-rj-k-no/photo.jpg" 
+alt="Курсы программирования, тестирования, веб-дизайна от ITEA (IT Education Academy)" width="600" height="450" border="10" /></a>
