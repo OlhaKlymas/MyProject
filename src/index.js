@@ -4,6 +4,7 @@ import Vue from "vue";
 import router from "./router";
 import profile from "./components/profile";
 import "./styles/styles";
+// import * as PIXI from 'pixi.min'
 new Vue({
   el:"#application",
   router,
